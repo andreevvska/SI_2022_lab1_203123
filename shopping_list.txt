@@ -2,4 +2,4 @@ Milk x1
 Sugar x3
 Eggs x8
 Juice x1
-Butter x4
+Butter x3
