@@ -1,0 +1,175 @@
+4. Откако ќе го креирате репозиториумот, клонирајте го на вашиот компјутер. По клонирање на репозиториумот, влезете во истиот со цел да можете да ги извршувате следните задачи.
+-Креирав папка на Desktop со cd SILab во која го клонирав моето git repo so naredbata git clone https://github.com/andreevvska/SI_2022_lab1_203123.git и потоа со cd наредбата влегов во локалното репо.
+
+5.Во локалниот репозиториум додадете текстуална датотека shopping_list.txt. Додадете во датотеката 5 случајни производи (секој во нов ред) и направете commit со порака “Add 5 items to the shopping list” 
+-Датотеката shopping_list ја креирав преку cmd сo наредбата copy_con и ја уредив преку истата,за да видам како излега искористив наредба type "ime na datoteka". За да направам commit прво направив git add . и потоа git commit -m со бараната порака.
+
+6. На секоја од 5те претходни ставки, додадете им количина (во следниот формат.
+bread x 2). Направете commit со порака “Add quantities to the items.”
+-Промена на file направив преку cmd со notepad наредбата каде сменив, потоа повоторно git add . за да се зачувуваат промените и git commit-m so пораката.
+
+7. Креирајте 2 гранки: branch1 и branch2.
+-Гранките ги креирав со наредбата git branch branch1 / git branch branch2.
+
+8.Внесете ги досегашните логови во документацијата.
+C:\Users\User\Desktop\SILab\SI_2022_lab1_203123>git log
+commit 63d2b86fddebbeee700678368f5e8b53f470f3e9 (HEAD -> master, branch2, branch1)
+Author: andreevvska <ivanaand89@gmail.com>
+Date:   Wed Mar 30 19:46:45 2022 +0200
+
+    Add quantities to the items
+
+commit 37cb6e9334de3551636355dc4c626c12d93c3365
+Author: andreevvska <ivanaand89@gmail.com>
+Date:   Wed Mar 30 19:45:03 2022 +0200
+
+    Add 5 items to the shopping list
+
+commit ad22642c29cddf540430d303d24f279b200b727d (origin/master, origin/HEAD)
+Author: Ivana <81651385+andreevvska@users.noreply.github.com>
+Date:   Wed Mar 30 19:38:04 2022 +0200
+
+    Update README.md
+
+commit a43e02154e5d49daf14eeb88b6a81f4594009548
+Author: Ivana <81651385+andreevvska@users.noreply.github.com>
+Date:   Wed Mar 30 19:33:57 2022 +0200
+
+    Initial commit
+
+9. Синхронизирајте ги сите гранки со оддалечениот репозиториум.
+-Гранките ги синхронизирав со наредбите git push -u origin master , git push -u origin branch1 , git push -u origin branch2.
+
+10. Префрлете се на гранката branch1.
+-За да се префрлам на branch1 ја искористав наредбата git checkout branch1
+
+11. Сменете ја количината на петтата ставка во shopping_list.txt и направете commit со порака “Change quantity of item #5”. 
+-Промена на file направив преку cmd со notepad shopping_list.txt наредбата каде сменив, потоа повоторно git add . за да се зачувуваат промените и git commit -m so пораката.
+
+12. Вратете се на гранката master.
+-За да се вратам на гранката master ја искористив наредбата git checkout master.
+
+13. Сменете ја количината на втората ставка во shopping_list.txt и направете commit со порака “Change quantity of item #2”
+-Промена на file направив преку cmd со notepad shopping_list.txt наредбата каде сменив, потоа повоторно git add . за да се зачувуваат промените и git commit -m so пораката.
+
+14. Синхронизирајте ги сите гранки со оддалечениот репозиториум
+-Гранките ги синхронизирав со наредбите git push -u origin master , git push -u origin branch1 , git push -u origin branch2.
+
+15. Префрлете се на гранката branch2. 
+-За да се префрлам на branch2 ја искористав наредбата git checkout branch2
+
+16. Променете го името на ставката бр. 4 во листата и направете commit со порака “Modify item #4”
+-Промена на file направив преку cmd со notepad наредбата каде сменив, потоа повоторно git add . за да се зачувуваат промените и git commit -m so пораката.
+
+17.Внесете ги досегашните логови во документацијата.
+C:\Users\User\Desktop\SILab\SI_2022_lab1_203123>git log
+commit fbba3b9a8954b9b53cea47bad4b5d9e1c25a3b66 (HEAD -> branch2)
+Author: andreevvska <ivanaand89@gmail.com>
+Date:   Wed Mar 30 20:16:19 2022 +0200
+
+    Modify item #4
+
+commit 63d2b86fddebbeee700678368f5e8b53f470f3e9 (origin/branch2)
+Author: andreevvska <ivanaand89@gmail.com>
+Date:   Wed Mar 30 19:46:45 2022 +0200
+
+    Add quantities to the items
+
+commit 37cb6e9334de3551636355dc4c626c12d93c3365
+Author: andreevvska <ivanaand89@gmail.com>
+Date:   Wed Mar 30 19:45:03 2022 +0200
+
+    Add 5 items to the shopping list
+
+commit ad22642c29cddf540430d303d24f279b200b727d
+Author: Ivana <81651385+andreevvska@users.noreply.github.com>
+Date:   Wed Mar 30 19:38:04 2022 +0200
+
+    Update README.md
+:...skipping...
+commit fbba3b9a8954b9b53cea47bad4b5d9e1c25a3b66 (HEAD -> branch2)
+Author: andreevvska <ivanaand89@gmail.com>
+Date:   Wed Mar 30 20:16:19 2022 +0200
+
+    Modify item #4
+
+commit 63d2b86fddebbeee700678368f5e8b53f470f3e9 (origin/branch2)
+Author: andreevvska <ivanaand89@gmail.com>
+Date:   Wed Mar 30 19:46:45 2022 +0200
+
+    Add quantities to the items
+
+commit 37cb6e9334de3551636355dc4c626c12d93c3365
+Author: andreevvska <ivanaand89@gmail.com>
+Date:   Wed Mar 30 19:45:03 2022 +0200
+
+    Add 5 items to the shopping list
+
+commit ad22642c29cddf540430d303d24f279b200b727d
+Author: Ivana <81651385+andreevvska@users.noreply.github.com>
+Date:   Wed Mar 30 19:38:04 2022 +0200
+
+    Update README.md
+
+commit a43e02154e5d49daf14eeb88b6a81f4594009548
+Author: Ivana <81651385+andreevvska@users.noreply.github.com>
+Date:   Wed Mar 30 19:33:57 2022 +0200
+
+    Initial commit
+~
+~
+~
+~
+~
+~
+~
+~
+~
+(END)
+
+18. Додадете 6та ставка во shopping_list.txt со промена на последниот commit. Сега пораката треба да гласи “Modify item #4 and add item #6”. 
+-Промена на file направив преку cmd со notepad наредбата каде сменив, потоа git add направив со -а и промена на commit пораката направив со git commit -a --amend -m “Modify item #4 and add item #6”
+
+19. Внесете ги досегашните логови во документацијата.
+commit bba61eb0a72fed8bbc7b7252672d6f9b4a3142b3 (HEAD -> branch2)
+Author: andreevvska <ivanaand89@gmail.com>
+Date:   Wed Mar 30 20:16:19 2022 +0200
+
+    Modify item #4 and add item #6
+
+commit 63d2b86fddebbeee700678368f5e8b53f470f3e9 (origin/branch2)
+Author: andreevvska <ivanaand89@gmail.com>
+Date:   Wed Mar 30 19:46:45 2022 +0200
+
+    Add quantities to the items
+
+commit 37cb6e9334de3551636355dc4c626c12d93c3365
+Author: andreevvska <ivanaand89@gmail.com>
+Date:   Wed Mar 30 19:45:03 2022 +0200
+
+    Add 5 items to the shopping list
+
+commit ad22642c29cddf540430d303d24f279b200b727d
+Author: Ivana <81651385+andreevvska@users.noreply.github.com>
+Date:   Wed Mar 30 19:38:04 2022 +0200
+
+    Update README.md
+
+commit a43e02154e5d49daf14eeb88b6a81f4594009548
+Author: Ivana <81651385+andreevvska@users.noreply.github.com>
+Date:   Wed Mar 30 19:33:57 2022 +0200
+
+    Initial commit
+20. Префрлете се на гранката master и спојте ја гранката branch1 кон master. 
+-За да се префрлам на master гранката ја искористив наредбата git checkout master , а за да ја спојам branch1 гранката ја искористив наредбата git merge branch1
+
+21. Спојте ја и гранката branch2 кон мастер. 
+За да ја спојам branch2 гранката кон master ја искористив наредбата git merge branch2 , но настана конфликт и го git add . i git commit.Потоа направив git merge branch2 и конфликтот беше решен.
+
+22.Додадете ја текстуалната датотека во која водевте документација до сега
+(потпишана со бројот на вашиот индекс) и направете commit со порака “Add
+docs”
+-Оваа датотека ја додаов со наредбата git add 203123.txt и git commit -m со бараната порака.
+
+23.Синхронизирајте ги сите гранки со оддалечениот репозиториум.
+За да можам да ги синхронизирам пормените ја искористив git push git push -u origin master.
