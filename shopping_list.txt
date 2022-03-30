@@ -1,5 +1,11 @@
 Milk x1
 Sugar x2
 Eggs x8
+<<<<<<< HEAD
 Juice x1
 Butter x3
+=======
+Ketchup x1
+Butter x4
+Honey x2
+>>>>>>> branch2
